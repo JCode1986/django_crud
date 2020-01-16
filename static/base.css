@@ -11,15 +11,11 @@ header {
     align-items: center;
 }
 
-.to-do-entry {
-    font-family: 'Source Sans Pro', sans-serif;
-    color: red  
-}
-
 div {
     align-content: center;
 }
 
-h1 {
-    color: red
+#head {
+    color: blue;
+    margin: 0 auto;
 }
