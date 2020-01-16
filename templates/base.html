@@ -2,12 +2,23 @@
 <html>
 <head>
     <title>To Do List</title>
-    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'base.css' %}">
 </head>
 <body>
     <header>
-    <h1><a href="{% url 'home' %}">To Do List</a></h1>
+
+        <h1>To Do List</h1>
+
     </header>
+    <div>
+        <h2><a href="{% url 'home' %}">Home</a></h2>
+    </div>
+    <div>
+        <h2><a href="{% url 'to_do_create' %}">Create to do list</a></h2>
+    </div>
+    <div>
+        <h3>These are your to do lists:</h3>
+    </div>
     <div>
     {% block content %}
     {% endblock content %}

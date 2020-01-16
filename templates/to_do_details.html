@@ -1,9 +1,13 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="post-entry">
-    <h2>{{ post.title }}</h2>
-    <p>{{ post.body }}</p>
+<div class="to-do-entry">
+    <ul>
+        <p>{{ post.title }}</p>
+        <p>{{ post.body }}</p>
+    </ul>
+    <button><a href="{% url 'to_do_delete' %}">Delete</a></button>
+    <button><a href="{% url 'to_do_update' %}">Update</a></button>
 </div>
 
 {% endblock content %}
