@@ -1,7 +1,7 @@
 # Django CRUD
 
 **Author**: Joseph Hangarter
-**Version**: 1.0.2
+**Version**: 1.0.3
 
 ## Overview
 * Create BlogCreateView that extends appropriate generic view
@@ -28,4 +28,4 @@
 ## Change Log
 * 01-15-2020 2:00pm - Inital commit
 * 01-15-2020 7:15pm - Everything wired up
-
+* 01-16-2020 12:34 - Create working, still need to work on update and delete
