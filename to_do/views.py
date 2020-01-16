@@ -1,4 +1,4 @@
-from django.views.generic import ListView, DetailView, DeleteView
+from django.views.generic import ListView, DetailView, DeleteView, CreateView, UpdateView
 from .models import Post
 from django.urls import reverse_lazy
 
@@ -14,7 +14,17 @@ class ToDoDetailsView(DetailView):
     template_name = 'to_do_details.html'
     model = Post
 
-class BlogDeleteView(DeleteView):
+class ToDoCreateView(CreateView):
+    template_name = 'to_do_create.html'
+    model = Post
+    fields = ['title', 'body', 'author']
+
+class ToDoUpdateView(UpdateView):
+    template_name = 'to_do_update.html'
+    model = Post
+    fields = ['title', 'body']
+
+class ToDoDeleteView(DeleteView):
     model = Post
     template_name = 'to_do_delete.html'
     # Delete View needs to define a success_url to know where to go after the deletion
