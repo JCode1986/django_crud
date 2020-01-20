@@ -6,8 +6,8 @@
         <p>{{ post.title }}</p>
         <p>{{ post.body }}</p>
     </ul>
-    <button><a href="{% url 'to_do_delete' %}">Delete</a></button>
-    <button><a href="{% url 'to_do_update' %}">Update</a></button>
+    <button><a href="{% url 'to_do_delete' post.id %}">Delete</a></button>
+    <button><a href="{% url 'to_do_update' post.id %}">Update</a></button>
 </div>
 
 {% endblock content %}
